@@ -1,0 +1,276 @@
+* {
+  scroll-behavior: smooth;
+
+  background-color: #fbf4eb;
+
+  box-sizing: border-box;
+}
+
+/* css rules that override any other formatting */
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 2.5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 9pt;
+  color: #214343;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  margin-left: 8.5%;
+  margin-top: 2%;
+  margin-right: 8.5%;
+}
+
+body {
+  padding: 40px;
+}
+
+/* FadeInUp Animation by Wassim Horan at 
+https://codepen.io/whoran/pen/WNbxpML */
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+/* Grid */
+
+/* Nav Bar
+nav bar tutorial by Traversy Media on YouTube
+https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
+
+.navbar {
+  background-color: #fbf4eb;
+  padding: 20px 0px;
+}
+
+.navbar .container ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 9pt;
+  transition: 0.3s;
+}
+
+/* Utility classes */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Text classes */
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Baskervville-Italic";
+  src: url("/fonts/Baskervville-Italic.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Baskervville-Regular";
+  src: url("/fonts/Baskervville-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+/* Breakpoint - mobile */
+
+@media (max-width: 600px) {
+  h1 {
+    color: #214343;
+    font-family: "Baskervville-Italic";
+    font-size: 45pt;
+    font-style: normal;
+    margin-left: 8.5%;
+    margin-right: 8.5%;
+    margin-top: 15%;
+  }
+
+  h2 {
+    font-family: "Baskervville-Regular";
+    color: #214343;
+    font-size: 15pt;
+    margin-left: 8.5%;
+    margin-top: 15%;
+  }
+
+  h3 {
+    color: #214343;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 10pt;
+    line-height: 1.5;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 8pt;
+    color: #214343;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-left: 8.5%;
+    margin-right: 10%;
+    margin-top: 4%;
+  }
+
+  img {
+    height: auto;
+    width: 50%;
+  }
+}
+
+/* Breakpoint - Desktop */
+
+@media (min-width: 601px) {
+  h1 {
+    color: #214343;
+    font-family: "Baskervville-Italic";
+    font-size: 65pt;
+    margin-right: 8.5%;
+    margin-left: 8.5%;
+  }
+
+  h2 {
+    font-family: "Baskervville-Regular";
+    color: #214343;
+    font-size: 25pt;
+    margin-left: 8.5%;
+    margin-top: 10%;
+  }
+
+  h3 {
+    color: #214343;
+    font-family: "Poppins", sans-serif;
+    font-size: 12pt;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 8.5%;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+    color: #214343;
+    line-height: 1.5;
+    margin-left: 8.5%;
+    margin-right: 40%;
+    margin-top: 5%;
+  }
+
+  img {
+    height: auto;
+    width: auto;
+  }
+}
+
+/*.relative {
+     position:relative;
+     border: 1px; color: #214343; }
+
+  .absolute {
+    position:absolute;
+    right: 0px;
+    height: 200px;
+    width: 400px;
+    border: 1px; color: #214343; }
+    */
+
+/* button group tutorial by 
+Tech Talk Tutorials on YouTube. */
+
+button {
+  height: auto;
+  width: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
+  color: #fbf4eb;
+}
+
+.button-grp button {
+  float: left;
+  float: right;
+  background-color: #fbf4eb;
+  border: 1.5px solid #5f5952;
+  padding: 10px 15px;
+  color: #214343;
+  cursor: pointer;
+}
+
+.button-grp:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button-grp button:hover {
+  background-color: #dcd8d2;
+  transition: 0.3s;
+}
+
+/* div class for anything that needs to be centered */
+.section-center {
+  width: 40vw;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 15%;
+}
