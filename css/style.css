@@ -29,6 +29,11 @@ body {
   padding: 40px;
 }
 
+/* GRIDSSS*/
+/* grid positioning and template area turorial by Scrimba on youtube.
+https://www.youtube.com/watch?v=6CiXrsUuJ7E&t=1s
+https://youtu.be/wcOyRx-V6Fo?si=wQN5jAku9aCu9yRJ */
+
 .container {
   display: grid;
   grid-gap: 50px;
@@ -50,6 +55,7 @@ body {
 .footer {
   grid-area: f;
 }
+
 /* FadeInUp Animation by Wassim Horan at 
 https://codepen.io/whoran/pen/WNbxpML */
 
@@ -128,41 +134,21 @@ https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
   padding: 0 15px;
 }
 
-/* Text classes */
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Baskervville-Italic";
-  src: url("/fonts/Baskervville-Italic.woff2") format("woff2");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Baskervville-Regular";
-  src: url("/fonts/Baskervville-Regular.woff2") format("woff2");
-  font-weight: normal;
-}
-
 /* Breakpoint - mobile */
 
 @media (max-width: 600px) {
   h1 {
     color: #214343;
-    font-family: "Baskervville-Italic";
+    font-family: "PlayfairDisplay-BoldItalic", serif;
     font-size: 45pt;
-    font-style: normal;
+    font-style: italic;
     margin-left: 8.5%;
     margin-right: 8.5%;
     margin-top: 15%;
   }
 
   h2 {
-    font-family: "Baskervville-Regular";
+    font-family: "PlayfairDisplay-Regular", serif;
     color: #214343;
     font-size: 15pt;
     margin-left: 8.5%;
@@ -199,16 +185,16 @@ https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
 @media (min-width: 601px) {
   h1 {
     color: #214343;
-    font-family: "Baskervville-Italic";
+    font-family: "PlayfairDisplay-BoldItalic", serif;
     font-size: 65pt;
     margin-right: 8.5%;
     margin-left: 8.5%;
   }
 
   h2 {
-    font-family: "Baskervville-Regular";
+    font-family: "PlayfairDisplay-Regular", serif;
     color: #214343;
-    font-size: 25pt;
+    font-size: 20pt;
     margin-left: 8.5%;
     margin-top: 10%;
   }
@@ -260,12 +246,14 @@ button {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 11pt;
+  justify-content: center;
   color: #fbf4eb;
 }
 
 .button-grp button {
-  float: left;
-  float: right;
+  position: center;
+  align-items: center;
+  margin-left: 30%;
   background-color: #fbf4eb;
   border: 1.5px solid #5f5952;
   padding: 10px 15px;

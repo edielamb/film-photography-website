@@ -1,0 +1,60 @@
+/* Text classes */
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* I'm aware that we are supposed to use .woff or .woff2 file type for adding fonts 
+to our websites, however that wasn't working for me at all. I floowed the in class demo, 
+youtube tutorials, forums and i just could not getmy fonts to appear online. They would 
+show up in the vs code preview but not on googel chrome or once i deployed to github.using 
+a .ttf file type was the only thing that worked to get the fonts to show up. */
+
+@font-face {
+  font-family: "PlayfairDisplay-BoldItalic";
+  src: url("/PlayfairDisplay-BoldItalic.ttf") format("ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  src: url("/PlayfairDisplay-Regular.ttf") format("ttf");
+}
+
+h1 {
+  color: #214343;
+  font-family: "PlayfairDisplay-BoldItalic", serif;
+  font-size: 65pt;
+  margin-right: 8.5%;
+  margin-left: 8.5%;
+}
+
+h2 {
+  font-family: "PlayfairDisplay-Regular", serif;
+  color: #214343;
+  font-size: 20pt;
+  margin-left: 8.5%;
+  margin-top: 10%;
+}
+
+h3 {
+  color: #214343;
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-left: 8.5%;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  color: #214343;
+  line-height: 1.5;
+  margin-left: 8.5%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
