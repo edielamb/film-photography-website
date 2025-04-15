@@ -26,9 +26,8 @@ a .ttf file type was the only thing that worked to get the fonts to show up. */
 h1 {
   color: #214343;
   font-family: "PlayfairDisplay-BoldItalic", serif;
-  font-size: 65pt;
-  margin-right: 8.5%;
-  margin-left: 8.5%;
+  font-size: 55pt;
+  margin-left: 8%;
 }
 
 h2 {
@@ -36,7 +35,7 @@ h2 {
   color: #214343;
   font-size: 20pt;
   margin-left: 8.5%;
-  margin-top: 10%;
+  line-height: 1.5;
 }
 
 h3 {

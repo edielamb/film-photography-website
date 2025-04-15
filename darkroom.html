@@ -2,199 +2,362 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <!--head is the sauce-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developing & Darkroom</title>
 
-<!--head is the sauce-->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Developing & Darkroom</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/fonts.css">
-    </head>
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        .column {
-          float: left;
-          width: 33.33%;
-          padding: 5px;
-        }
-        
-        /* Clearfix (clear floats) */
-        .row::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-        </style>
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
 
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
 
-<body>
-<!--nav bar-->
-<nav class="navbar">
-    <div class="wrapper">
+  <body>
+    <!--nav bar-->
+    <nav class="navbar">
+      <div class="wrapper">
         <div class="main-menu">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="functions.html">Camera Functions</a>
-                </li>
-                <li>
-                    <a href="light.html">Light & Exposure</a>
-                </li>
-                <li>
-                    <a href="darkroom.html">Developing</a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="functions.html">Camera Functions</a>
+            </li>
+            <li>
+              <a href="light.html">Light & Exposure</a>
+            </li>
+            <li>
+              <a href="darkroom.html">Developing</a>
+            </li>
+          </ul>
         </div>
-    </div>
-  </nav>
+      </div>
+    </nav>
 
-<!--content-->
-<div class="animated animatedFadeInUp fadeInUp">
-        <h1>Developing & Darkroom</h1>
+    <!--content-->
+    <div class="animated animatedFadeInUp fadeInUp">
+      <h1>Developing & Darkroom</h1>
 
-<div class="container">
-    <div class="content">
-        
-                
-        <img src="images/hangingfilm 1.png">
-        <p>This page covers how to make unique prints of your negatives using color and B&W darkrooms, 
-                    along with tips on developing and color management.</p>
-                
-        <p>A darkroom is a space used to develop and print 
-        photographs from film. In black and white (B&W) darkrooms, the film 
-        is developed using a series of chemical baths, then images are printed 
-        onto light-sensitive paper and processed in more chemicals under red or 
-        amber safelights. Color darkrooms are more complex and require total 
-        darkness, as color paper is more sensitive to light and the process 
-        involves more precise temperature and chemical control. Each type uses 
-        enlargers to project the film image onto photo paper before development. 
-        Darkrooms give photographers hands on control over the final look of 
-        their prints, including contrast, exposure, and tone.</p>
-               
-    </div>       
+      <div class="container">
+        <div class="content">
+          <img src="images/hangingfilm 1.png" />
+          <p>
+            This page covers how to make unique prints of your negatives using
+            color and B&W darkrooms, along with tips on developing and color
+            management.
+          </p>
 
-
-    <!--table of contents-->
-    <div class="menu">
-        
-
-        <h2>Topics on this page:</h2>
-        <p>Select an option to jump ahead.</p>
-
-        <br>
-
-        <div style="margin-left: 8.5%;">
-        <nav>
-                <a href="#chapter1">Black & White Darkroom</a>
-                <br>
-                <br>
-                <a href="#chapter2">Color Darkroom</a>
-                <br>
-                <br>
-                <a href="#chapter3">Gallery of Uncommon Approaches </a>
-                <br>
-        </nav>
+          <p>
+            A darkroom is a space used to develop and print photographs from
+            film. In black and white (B&W) darkrooms, the film is developed
+            using a series of chemical baths, then images are printed onto
+            light-sensitive paper and processed in more chemicals under red or
+            amber safelights. Color darkrooms are more complex and require total
+            darkness, as color paper is more sensitive to light and the process
+            involves more precise temperature and chemical control. Each type
+            uses enlargers to project the film image onto photo paper before
+            development. Darkrooms give photographers hands on control over the
+            final look of their prints, including contrast, exposure, and tone.
+          </p>
         </div>
+
+        <!--table of contents-->
+        <div class="menu">
+          <h2>Topics on this page:</h2>
+          <p>Select an option to jump ahead.</p>
+
+          <br />
+
+          <div style="margin-left: 8.5%">
+            <nav>
+              <a href="#chapter1">Black & White Darkroom</a>
+              <br />
+              <br />
+              <a href="#chapter2">Color Darkroom</a>
+              <br />
+              <br />
+              <a href="#chapter3">Gallery of Uncommon Approaches </a>
+              <br />
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!--new page section-->
+      <h1 id="chapter1">Black & White Darkroom</h1>
+
+      <div class="container">
+        <div class="content">
+          <h2>Enlarger</h2>
+
+          <img src="images/bwenlargernum.png" style="width: 60%" />
+          <p>
+            A black and white darkroom enlarger is what you will use to get your
+            image from a negative to a full sized positive print. The enlarger
+            projects light through a negative onto light-sensitive photographic
+            paper to create a print. It uses a lens and adjustable height to
+            control the size and focus of the image. The amount of light and
+            contrast filters used during exposure affect the final print's
+            brightness and contrast. Read about different parts of the enlarger
+            corresponding with the numbers labeled on the image.
+          </p>
+        </div>
+
+        <div class="menu">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h3>Parts of the Enlarger</h3>
+          <br />
+          <p>
+            1. Lens: The lens on a black and white enlarger focuses the
+            projected image from the negative onto the photo paper.
+          </p>
+          <br />
+          <p>
+            2. Timer: The timer controls how long the enlarger light stays on,
+            determining the exposure time for the photo paper.
+          </p>
+          <br />
+          <p>
+            3. Contrast filter: The contrast filter adjusts the image's contrast
+            by controlling how different tones appear in the final print.
+          </p>
+          <br />
+          <p>
+            4. Paper: The paper is light-sensitive and captures the image
+            projected from the negative when exposed and developed.
+          </p>
+          <br />
+          <p>
+            5. Easel: The easel holds the photo paper flat and in place, helping
+            frame and align the image during exposure.
+          </p>
+        </div>
+
+        <div class="content">
+          <h2>Chemicals</h2>
+
+          <img src="images/chemicals.png" />
+          <p>
+            The ammount of time your print spends in each chemical can change
+            the outcome of the image. For example, longer developing times will
+            make the tones much richer and highly contrasted vs shorter
+            developing time which will made the image appear faded. Below are
+            examples of the same image developed at three different ammounts of
+            time, can you notice the difference?
+          </p>
+          <br />
+          <br />
+          <img src="images/chemicalexampleplaceholder.png" style="width: 90%" />
+          <br />
+          <br />
+          <p>
+            Another way to adjust the tonal outcome of your images is to use
+            Contrast Filters. Contrast filters in film darkrooms are used during
+            the printing process to control the contrast of black-and-white
+            photographic prints made from negatives. They adjust how the light
+            exposes the photographic paper. The level of contrast in a filter is
+            catagorized by number, usually ranging from levels 00 to 5, with
+            lower-numbered filters (levels 0-2) producing softer, lower-contrast
+            images and higher-numbered filters (levels 3-5) creating more
+            dramatic, higher-contrast prints. This helps achieve the desired
+            tonal range and emphasize details in highlights or shadows. The
+            general rule of thumb is; higher contrast will make your black tones
+            blacker, and your white tones whiter. Lower contast will do the
+            opposite and make the tones appear in different shades of grey.
+          </p>
+        </div>
+
+        <!--content end div-->
+        <div class="menu">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <p>
+            In black and white darkroom printing, the chemicals are used in a
+            specific order:
+            <br />
+            <br />
+            Developer: This brings out the image on the exposed photo paper by
+            reacting with the areas hit by light.
+            <br />
+            <br />
+            Stop Bath: This stops the development process immediately to prevent
+            overdevelopment.
+            <br />
+            <br />
+            Fixer: This makes the image permanent by removing any unexposed
+            silver halide, so the paper can be exposed to light without
+            changing.
+            <br />
+            <br />
+            Water Wash: This rinses off all remaining chemicals to preserve the
+            print and prevent damage or fading over time.
+          </p>
+        </div>
+      </div>
+      <!-- .container end div-->
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <h1 id="chapter2">Color Darkroom</h1>
+
+      <div class="container">
+        <div class="content">
+          <h2>Enlarger</h2>
+          <img src="images/colorenlarger.png" style="width: 60%" />
+          <p>
+            A color enlarger is different than a Black & White enlarger because
+            it uses CMYK values to control the color. It also makes prints from
+            color negatives by projecting the image onto color photographic
+            paper. It has built-in adjustable CMYK filters to control color
+            balance and contrast during exposure. By adjusting these filters,
+            you can correct color casts and fine-tune the look of the final
+            print. Read about different parts of the enlarger corresponding with
+            the numbers labeled on the image.
+          </p>
+          <p>
+            Now in terms of devweloping the image, the color darkroom developing
+            process differs from black and white in that it uses different
+            chemicals specifically designed for color prints instead of the
+            black and white developer, stop bath, and fixer. Color printing
+            requires precise temperature control and timing, which is why it's
+            often done using automated machines that ensure consistency. Unlike
+            black and white printing, which can be done manually under a red
+            safelight, color printing must be done in complete darkness because
+            color paper is sensitive to all light.
+          </p>
+          <p>
+            Producing color prints at home might be more difficult than bland &
+            white. Although it is totally possible with the right tools and
+            equipment, most people will find it eaier to simply send their
+            negatives to a printing facility or a camera shop that has a fully
+            functioning darkroom. Although they are rare, certain places offer
+            darkrooms for rent, which makes it possible to do the printing
+            process yourself.
+          </p>
+        </div>
+
+        <div class="menu">
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h3>Parts of the Color Enlarger</h3>
+          <p>
+            1. Color Dials: These dials control the amount of cyan, magenta, and
+            yellow light to adjust the color balance of the print.
+          </p>
+          <br />
+          <p>
+            2. Focuser: A small magnifier tool used to ensure the projected
+            image from the enlarger is sharply focused on the paper.
+          </p>
+          <br />
+          <p>
+            3. Lens: Projects the image from the negative onto the photographic
+            paper and allows for adjustments in sharpness and exposure.
+          </p>
+          <br />
+          <p>
+            4. Easel: Holds the photographic paper in place and helps align and
+            crop the image for consistent, clean borders.
+          </p>
+          <br />
+          <p>
+            Not pictured: similar to the black and white enlarger, color
+            enlargers also include timers and require photographic paper (color
+            paper works different than b&w paper! Make sure you use the right
+            one).
+          </p>
+        </div>
+
+        <div class="content">
+          <h2>Color Values & Fine-tuning your Print</h2>
+          <img src="images/colorwheel.png" style="width: 60%" />
+          <p>
+            There are three primary colors in negative colour photography: red,
+            green and blue. Inbetween that, there is cyan, magenta, and yellow.
+            Each film emulsion contains three layers of filters sensitive to
+            those colors, and the same applies to colour paper. When those
+            layers are combined they create the full picture.
+          </p>
+          <p>
+            As each film and batch of paper has different color dominance,
+            you'll need do adjust the color dials to get the colour balance that
+            you want. How do you do that? By using the enlarger's color dials.
+          </p>
+          <p>
+            The tricky thing about printing color film is that adjusting the
+            color levels works opposite. For example, on the color dials,
+            increasing cyan removes red, increasing magenta removes green, and
+            increasing yellow removes blue. If your image comes out too green,
+            you likely need to ADD magenta, not decrease cyan + yellow. Think of
+            it as a game of addition. On the right are examples of an image with
+            different color levels, and what adjustments were made.
+          </p>
+        </div>
+
+        <div class="menu">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h3>What different color levels look like</h3>
+          <img src="images/placeholdersmall.png" />
+          <img src="images/placeholdersmall.png" />
+          <img src="images/placeholdersmall.png" />
+        </div>
+      </div>
     </div>
-</div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-    <!--new page section-->
-    <h1>Black & White Darkroom</h1>
-
-<div class="container">
-    <div class="content">
-
-        <h2>Enlarger</h2>
-
-        <img src="images/bwenlargernum.png">
-    </div>
-
-    <div class="menu">
-        <p>1. Lens: The lens on a black and white enlarger focuses the projected image from the negative onto the photo paper.</p>
-                
-        <p>2. Timer: The timer controls how long the enlarger light stays on, determining the exposure time for the photo paper.</p>
-                
-        <p>3. Contrast filter: The contrast filter adjusts the image's contrast by controlling how different tones appear in the final print.</p>
-
-        <p>4. Paper: The paper is light-sensitive and captures the image projected from the negative when exposed and developed.
-                
-        <p>5. Easel: The easel holds the photo paper flat and in place, helping frame and align the image during exposure.</p>
-    </div>
-            
-
-    <div class="content"> 
-        <h2>Chemicals</h2>
-
-        <img src="images/chemicals.png">
-        <p>In black and white darkroom printing, the chemicals are used in a specific order:
-        <br>
-        <br>
-        Developer: This brings out the image on the exposed photo paper by reacting with the areas hit by light.
-        <br>
-        <br>
-        Stop Bath: This stops the development process immediately to prevent overdevelopment.
-        <br>
-        <br>
-        Fixer: This makes the image permanent by removing any unexposed silver halide, so the paper can be exposed to light without changing.
-        <br>
-        <br>
-        Water Wash: This rinses off all remaining chemicals to preserve the print and prevent damage or fading over time.
-
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
-
-    
-    <div class="content">
-            
-        <p>The ammount of time your print spends in each chemical can change the outcome of the image.
-            For example, longer developing times will make the tones much richer and highly contrasted 
-            vs shorter developing time which will made the image appear faded. Below are examples of
-            the same image developed at three different ammounts of time:
-        </p>
-    </div>
-
-
-        <br>
-        <br>
-
-            <div class="row">
-                <div class="column">
-                    <img src="images/placeholdersmall.png" style="width:70%">
-                    <p>Too little time</p>
-                </div>
-                
-            <div class="column">
-                <img src="images/placeholdersmall.png" style="width: 70%">
-                <p>Perfect time</p>
-            </div>
-            
-            <div class="column">
-                <img src="images/placeholdersmall.png" style="width:70%">
-                <p>Too much time</p>
-            </div>  
-
-</div>       
-
-</div>
-
-
-
-    </body>
+    <!--fadeinup animation end div-->
+  </body>
 </html>
 <!--the end-->

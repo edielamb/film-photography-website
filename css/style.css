@@ -39,18 +39,16 @@ https://youtu.be/wcOyRx-V6Fo?si=wQN5jAku9aCu9yRJ */
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 50px;
+  gap: 1%;
 }
 
 .content {
   grid-column: span 8;
-  background: #c8cdcc;
   padding: 20px;
 }
 
 .menu {
   grid-column: span 4;
-  padding: 20px;
 }
 
 .footer {
@@ -84,9 +82,9 @@ https://codepen.io/whoran/pen/WNbxpML */
 }
 
 .animated {
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
 }
 
@@ -100,13 +98,24 @@ https://codepen.io/whoran/pen/WNbxpML */
   -webkit-animation-name: fadeInUp;
 }
 
+/* horizontal and vertical rules */
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
 /* Nav Bar
 nav bar tutorial by Traversy Media on YouTube
 https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
 
 .navbar {
   background: transparent;
-  padding: 10px 0px;
+  padding: 0px 30px;
 }
 
 .navbar .wrapper ul {
@@ -120,7 +129,7 @@ https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
 }
 
 .navbar ul li a {
-  padding: 10px 20px;
+  padding: 5px 30px;
   display: block;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -186,8 +195,9 @@ https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
   h1 {
     color: #214343;
     font-family: "PlayfairDisplay-BoldItalic", serif;
-    font-size: 65pt;
+    font-size: 55pt;
     background: transparent;
+    margin-left: 8%;
   }
 
   h2 {
@@ -195,6 +205,7 @@ https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
     color: #0c1818;
     font-size: 20pt;
     background: transparent;
+    line-height: 1.5;
   }
 
   h3 {
@@ -259,8 +270,13 @@ button {
 
 /* div class for anything that needs to be centered */
 .section-center {
-  margin-right: 40%;
-  margin-left: 30%;
+  margin-right: 45%;
+  margin-left: 0%;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.text-center {
+  margin-right: 25%;
+  margin-left: 20%;
 }
