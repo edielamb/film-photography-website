@@ -31,6 +31,36 @@ body {
   padding: 3%;
 }
 
+/*FONTS*/
+
+@font-face {
+  font-family: "PlayfairDisplay-BoldItalic";
+  src: url("fonts/PlayfairDisplay-BoldItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  src: url("fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* GRIDSSS*/
 /* grid positioning and template area turorial by Scrimba on youtube.
 https://www.youtube.com/watch?v=6CiXrsUuJ7E&t=1s
@@ -152,35 +182,36 @@ https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
   h1 {
     color: #214343;
     font-family: "PlayfairDisplay-BoldItalic", serif;
-    font-size: 45pt;
-    font-style: italic;
-    margin-top: 15%;
-    background: transparent;
+    font-size: 30pt;
+    margin-left: 8%;
   }
 
   h2 {
     font-family: "PlayfairDisplay-Regular", serif;
-    color: #0c1818;
-    font-size: 15pt;
-    background: transparent;
+    color: #214343;
+    font-size: 14pt;
+    margin-left: 8.5%;
+    line-height: 1.5;
   }
 
   h3 {
-    color: #0c1818;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    color: #214343;
+    font-family: "Poppins-SemiBold", sans-serif;
     font-size: 10pt;
+    font-weight: 500;
     line-height: 1.5;
-    background: transparent;
+    margin-left: 8.5%;
   }
 
   p {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins-Regular", sans-serif;
     font-size: 8pt;
-    color: #0c1818;
-    line-height: 1.5;
     font-weight: 300;
-    background: transparent;
+    color: #214343;
+    line-height: 1.5;
+    margin-left: 8.5%;
+    margin-right: 10%;
+    margin-top: 5%;
   }
 
   img {
@@ -196,34 +227,35 @@ https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
     color: #214343;
     font-family: "PlayfairDisplay-BoldItalic", serif;
     font-size: 55pt;
-    background: transparent;
     margin-left: 8%;
   }
 
   h2 {
     font-family: "PlayfairDisplay-Regular", serif;
-    color: #0c1818;
+    color: #214343;
     font-size: 20pt;
-    background: transparent;
+    margin-left: 8.5%;
     line-height: 1.5;
   }
 
   h3 {
-    color: #0c1818;
-    font-family: "Poppins", sans-serif;
+    color: #214343;
+    font-family: "Poppins-SemiBold", sans-serif;
     font-size: 12pt;
     font-weight: 500;
     line-height: 1.5;
-    background: transparent;
+    margin-left: 8.5%;
   }
 
   p {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins-Regular", sans-serif;
     font-size: 11pt;
     font-weight: 300;
-    color: #0c1818;
+    color: #214343;
     line-height: 1.5;
-    background: transparent;
+    margin-left: 8.5%;
+    margin-right: 10%;
+    margin-top: 5%;
   }
 
   img {
