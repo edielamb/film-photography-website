@@ -4,33 +4,6 @@
   background-color: #fbf4eb;
 }
 
-/* css rules that override any other formatting */
-
-a {
-  text-decoration: underline;
-  text-underline-offset: 2.5px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 9pt;
-  color: #214343;
-  background: transparent;
-}
-
-ul {
-  list-style: none;
-  background: transparent;
-}
-
-img {
-  margin-left: 8.5%;
-  margin-top: 2%;
-  background: transparent;
-}
-
-body {
-  padding: 3%;
-}
-
 /*FONTS*/
 
 @font-face {
@@ -61,6 +34,13 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("fonts/Poppins-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* GRIDSSS*/
 /* grid positioning and template area turorial by Scrimba on youtube.
 https://www.youtube.com/watch?v=6CiXrsUuJ7E&t=1s
@@ -74,16 +54,20 @@ https://youtu.be/wcOyRx-V6Fo?si=wQN5jAku9aCu9yRJ */
 
 .content {
   grid-column: span 8;
-  padding: 20px;
+  padding: 2%;
 }
 
 .menu {
   grid-column: span 4;
+  background: #d8e1e0;
+  padding: 10%;
+  align-self: start;
+  margin-top: 35%;
 }
 
 .footer {
   grid-column: 1 / -1;
-  padding: 20px;
+  padding: 5%;
 }
 
 /* FadeInUp Animation by Wassim Horan at 
@@ -132,9 +116,9 @@ https://codepen.io/whoran/pen/WNbxpML */
 
 hr {
   border: 0;
-  height: 1px;
-  background: #333;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  height: 1.5px;
+  background: #2b5858;
+  background-image: linear-gradient(to right, #ccc, #2b5858, #ccc);
   margin-bottom: 5%;
   margin-top: 5%;
 }
@@ -142,81 +126,92 @@ hr {
 /* Nav Bar
 nav bar tutorial by Traversy Media on YouTube
 https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
-
-.navbar {
-  background: transparent;
-  padding: 0px 30px;
-}
-
-.navbar .wrapper ul {
+.navbar .main-menu {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
 }
 
-.navbar .main-menu ul {
+/* Optional: Keep existing styles */
+.navbar .nav-left,
+.navbar .nav-right {
   display: flex;
+  align-items: center;
 }
 
 .navbar ul li a {
-  padding: 5px 30px;
+  padding: 0px 40px;
   display: block;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-family: "Poppins-Regular", sans-serif;
   font-size: 9pt;
   transition: 0.5s;
 }
 
-/* Utility classes */
-
-.wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  margin-right: 0px;
-  padding: 0 0px;
+.navbar ul {
+  margin-bottom: 0%;
+  padding: 0;
+  list-style: none;
 }
 
 /* Breakpoint - mobile */
 
 @media (max-width: 600px) {
   h1 {
-    color: #214343;
-    font-family: "PlayfairDisplay-BoldItalic", serif;
-    font-size: 30pt;
+    color: #254b4b;
+    font-family: "PlayfairDisplay-BoldItalic";
+    font-size: 40pt;
     margin-left: 8%;
+    background: transparent;
   }
 
   h2 {
-    font-family: "PlayfairDisplay-Regular", serif;
-    color: #214343;
+    font-family: "PlayfairDisplay-Regular";
+    color: #254b4b;
     font-size: 14pt;
     margin-left: 8.5%;
     line-height: 1.5;
+    background: transparent;
   }
 
   h3 {
-    color: #214343;
-    font-family: "Poppins-SemiBold", sans-serif;
+    color: black;
+    font-family: "Poppins-SemiBold";
     font-size: 10pt;
     font-weight: 500;
     line-height: 1.5;
     margin-left: 8.5%;
+    background: transparent;
   }
 
   p {
-    font-family: "Poppins-Regular", sans-serif;
+    font-family: "Poppins-Light";
     font-size: 8pt;
     font-weight: 300;
-    color: #214343;
+    color: black;
     line-height: 1.5;
     margin-left: 8.5%;
     margin-right: 10%;
     margin-top: 5%;
+    background: transparent;
   }
 
   img {
     height: auto;
-    width: 50%;
+    width: 90%;
+    background: transparent;
+  }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2.5px;
+    font-family: "Poppins-Regular";
+    font-size: 6pt;
+    color: black;
+    background: transparent;
+  }
+
+  body {
+    padding: 1%;
   }
 }
 
@@ -224,44 +219,59 @@ https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
 
 @media (min-width: 601px) {
   h1 {
-    color: #214343;
-    font-family: "PlayfairDisplay-BoldItalic", serif;
-    font-size: 55pt;
-    margin-left: 8%;
+    color: #254b4b;
+    font-family: "PlayfairDisplay-BoldItalic";
+    font-size: 65pt;
+    background: transparent;
   }
 
   h2 {
-    font-family: "PlayfairDisplay-Regular", serif;
-    color: #214343;
-    font-size: 20pt;
-    margin-left: 8.5%;
+    font-family: "PlayfairDisplay-Regular";
+    color: #254b4b;
+    font-size: 28pt;
     line-height: 1.5;
+    background: transparent;
   }
 
   h3 {
-    color: #214343;
-    font-family: "Poppins-SemiBold", sans-serif;
+    color: black;
+    font-family: "Poppins-SemiBold";
     font-size: 12pt;
     font-weight: 500;
     line-height: 1.5;
-    margin-left: 8.5%;
+    background: transparent;
   }
 
   p {
-    font-family: "Poppins-Regular", sans-serif;
+    font-family: "Poppins-Light";
     font-size: 11pt;
     font-weight: 300;
-    color: #214343;
+    color: black;
     line-height: 1.5;
-    margin-left: 8.5%;
     margin-right: 10%;
     margin-top: 5%;
+    background: transparent;
   }
 
   img {
     height: auto;
     width: auto;
+    margin-top: 2%;
     background: transparent;
+    background: transparent;
+  }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2.5px;
+    font-family: "Poppins-Regular";
+    font-size: 9pt;
+    color: #254b4b;
+    background: transparent;
+  }
+
+  body {
+    padding: 5%;
   }
 }
 
@@ -271,7 +281,7 @@ Tech Talk Tutorials on YouTube. */
 button {
   height: auto;
   width: 0 auto;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins-Regular";
   font-weight: 400;
   font-size: 11pt;
   justify-content: center;
@@ -283,9 +293,9 @@ button {
   align-items: center;
   margin-left: 30%;
   background-color: #fbf4eb;
-  border: 1.5px solid #5f5952;
+  border: 2px solid #254b4b;
   padding: 10px 15px;
-  color: #214343;
+  color: black;
   cursor: pointer;
 }
 
@@ -296,13 +306,13 @@ button {
 }
 
 .button-grp button:hover {
-  background-color: #dad3ca;
+  background-color: #d5e4e1;
   transition: 0.3s;
 }
 
 /* div class for anything that needs to be centered */
 .section-center {
-  margin-right: 45%;
+  margin-right: 25%;
   margin-left: 0%;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -310,5 +320,10 @@ button {
 
 .text-center {
   margin-right: 25%;
-  margin-left: 20%;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.link-section {
+  background: transparent;
 }

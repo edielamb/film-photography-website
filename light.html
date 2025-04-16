@@ -1,8 +1,5 @@
-<!--html is the bread of the sandwich-->
-
 <!DOCTYPE html>
 <html lang="en">
-  <!--head is the sauce-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,8 +7,9 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <style>
-    /*internal css for different image layout on this page */
+    /*internal css for side-by-side layouts on this page */
     * {
       box-sizing: border-box;
     }
@@ -19,7 +17,7 @@
     .column {
       float: left;
       width: 33.33%;
-      padding: 5px;
+      padding: 2%;
       background: transparent;
     }
 
@@ -29,39 +27,38 @@
       display: table;
       background: transparent;
     }
+
+    /*makes the list of links have a transparant background so it works with the grid section background color*/
+    a {
+      background: transparent;
+    }
   </style>
 
-  <!--body is the protein, all content that is visible on the website-->
   <body>
-    <!--grids-->
-
-    <!--nav bar-->
-
-    <nav class="navbar">
-      <div class="wrapper">
-        <div class="main-menu">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="functions.html">Camera Functions</a>
-            </li>
-            <li>
-              <a href="light.html">Light & Exposure</a>
-            </li>
-            <li>
-              <a href="darkroom.html">Developing</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!--content-->
     <div class="animated animatedFadeInUp fadeInUp">
+      <!--nav bar-->
+      <nav class="navbar">
+        <div class="wrapper">
+          <div class="main-menu">
+            <ul class="nav-left">
+              <li><a href="index.html">Home</a></li>
+            </ul>
+            <ul class="nav-right">
+              <li><a href="functions.html">Camera Functions</a></li>
+              <li><a href="light.html">Light & Exposure</a></li>
+              <li><a href="darkroom.html">Developing</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <hr />
+
       <h1>Light & Exposure</h1>
       <p style="margin-right: 42%">
+        <!--different margin because titles are not part of the grids. this specific title has a 
+        paragraph as well, so the margin makes sure the text doesn't span the whole page-->
         In film photography, light is essential because it exposes the film and
         creates the image. Exposure refers to how much light reaches the film
         during a shot. The right exposure is achieved by balancing three
@@ -75,10 +72,12 @@
       <br />
       <br />
 
+      <!--grid-based layout container starts here-->
       <div class="container">
+        <!--Section 1: Light and exposure-->
         <div class="content">
           <h2>Light Meter</h2>
-          <img src="images/lightmeter.png" />
+          <img src="images/lightmeter.png" alt="handheld light meter" />
           <p>
             A light meter in a film camera measures the amount of light in a
             scene to help determine the correct exposure settings. It suggests
@@ -91,60 +90,52 @@
         </div>
 
         <div class="menu">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-
           <h3>Light Meter Alternatives</h3>
           <br />
           <p>
-            Not all cameras come with a built-in light meter, and its common
+            Not all cameras come with a built-in light meter, and it's common
             that some older cameras' light meters stop working over time. If
-            that's the case for you, dont worry! There are many different
+            that's the case for you, don't worry! There are many different
             alternatives to an in-camera light meter including handheld meters
             and even mobile apps. Below are some links to good quality light
             meter alternatives.
           </p>
-          <br />
-          <br />
-
-          <div class="section" style="margin-left: 8.5%">
+          <br /><br />
+          <!--external link section-->
+          <div class="link-section">
             <a href="https://www.lu.mu/">Lumu App↗</a>
-            <br />
-            <br />
-
+            <br /><br />
             <a
               href="https://apps.apple.com/us/app/lightme-lightmeter/id1509033790"
-              >LightMe App↗</a
             >
-            <br />
-            <br />
-
-            <a href="https://apps.apple.com/us/app/mylightmeter-pro/id583922375"
-              >MyLightMeter Pro App↗</a
-            >
-            <br />
-            <br />
-
+              LightMe App↗
+            </a>
+            <br /><br />
             <a
-              href="https://downtowncamera.com/shop/categories/light-meter/4be4296a-3bb0-4b0c-a6e7-de12e9d72525?srsltid=AfmBOoo9UHmPG4r5v9cLzCTx3ahS-ksupCO2cl8_bY-y3fDKeRp7QPXB"
-              >Downtown Camera - Handheld Light Meters↗</a
+              href="https://apps.apple.com/us/app/mylightmeter-pro/id583922375"
             >
-            <br />
-            <br />
-
-            <a href="https://www.etsy.com/ca/market/light_exposure_meter"
-              >Etsy - Handheld Light Meters↗</a
+              MyLightMeter Pro App↗
+            </a>
+            <br /><br />
+            <a
+              href="https://downtowncamera.com/shop/categories/light-meter/4be4296a-3bb0-4b0c-a6e7-de12e9d72525"
             >
+              Downtown Camera - Handheld Light Meters↗
+            </a>
+            <br /><br />
+            <a href="https://www.etsy.com/ca/market/light_exposure_meter">
+              Etsy - Handheld Light Meters↗
+            </a>
+            <!--links to an external webpage use the arrow icon to tell users they are going off-site
+            html arrow from https://www.toptal.com/designers/htmlarrows/arrows/-->
           </div>
         </div>
 
+        <!--Section 2: exposure triangle-->
         <div class="content">
           <h2>Exposure Triangle</h2>
           <br />
-          <img src="images/triangle.png" />
+          <img src="images/triangle.png" alt="Exposure Triangle" />
           <p>
             The exposure triangle is a concept in photography that shows how
             three settings—aperture (f-stop), shutter speed, and ISO—work
@@ -158,26 +149,16 @@
         </div>
 
         <div class="menu">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-
           <h3>Good Exposure</h3>
-          <img src="images/placeholdersmall.png" />
-
-          <br />
-          <br />
-          <br />
-
+          <img src="images/placeholdersmall.png" alt="good exposed image" />
+          <br /><br /><br />
           <h3>Bad Exposure</h3>
-          <img src="images/placeholdersmall.png" />
+          <img src="images/placeholdersmall.png" alt="bad exposed image" />
         </div>
 
+        <!--Section 3: film and camera type-->
         <div class="content">
           <h2>Film & Camera Type</h2>
-
           <p>
             Different film brands and types affect the look of film photos by
             altering color, contrast, grain, and tone. Kodak Portra, Fujifilm
@@ -185,7 +166,6 @@
             look, so choosing a brand and type depends on the desired mood and
             aesthetic you want to create with your image.
           </p>
-
           <p>
             Here are some examples of photos taken with different film types.
             The colors, tones, and grain vary depending on different brands of
@@ -193,54 +173,59 @@
             style of photography you love!
           </p>
 
+          <!--side-by-side image layout-->
           <br />
-
-          <div style="margin-left: 5%">
-            <div class="row">
-              <div class="column">
-                <img src="images/kodak.png" style="width: 100%" />
-                <p>Kodak: Ektar 100</p>
-              </div>
-              <div class="column">
-                <img src="images/fuji.png" style="width: 100%" />
-                <p>Fujifilm: FujiColor 200</p>
-              </div>
+          <div class="row">
+            <div class="column">
+              <img src="images/kodak.png" style="width: 100%" alt="Kodak" />
+              <p>Kodak: Ektar 100</p>
             </div>
+            <div class="column">
+              <img src="images/fuji.png" style="width: 99%" alt="fujifilm" />
+              <p>Fujifilm: FujiColor 200</p>
+            </div>
+          </div>
 
-            <div class="row">
-              <div class="column">
-                <img src="images/cinestill.png" style="width: 100%" />
-                <p>Cinestill: B&W 800</p>
-              </div>
-              <div class="column">
-                <img src="images/illford.png" style="width: 101%" />
-                <p>Illford: HP5 400</p>
-              </div>
+          <div class="row">
+            <div class="column">
+              <img
+                src="images/cinestill.png"
+                style="width: 100%"
+                alt="cinestill"
+              />
+              <p>Cinestill: B&W 800</p>
+            </div>
+            <div class="column">
+              <img src="images/illford.png" style="width: 101%" alt="illford" />
+              <p>Illford: HP5 400</p>
             </div>
           </div>
         </div>
 
+        <!--footer-->
         <div class="footer">
-          <div class="navbar">
-            <div class="wrapper">
-              <div class="main-menu">
-                <div class="section-center">
-                  <ul>
-                    <li>
-                      <a href="functions.html">Previous Step</a>
-                    </li>
-
-                    <li>
-                      <a href="darkroom.html">Next Step</a>
-                    </li>
-                  </ul>
+          <hr />
+          <div style="margin-left: 25%">
+            <div class="button-grp">
+              <div class="row">
+                <div class="column">
+                  <a href="functions.html">
+                    <button>Previous Step: Camera <br />Functions</button>
+                  </a>
+                </div>
+                <div class="column">
+                  <a href="darkroom.html">
+                    <button>Next Step: Developing & Darkroom</button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!--.container end-->
     </div>
+    <!--fadeinup end-->
   </body>
 </html>
 <!--the end-->

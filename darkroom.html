@@ -1,7 +1,7 @@
-<!--html is the bread of the sandwich-->
-
 <!DOCTYPE html>
 <html lang="en">
+  <!--html is the bread of the sandwich-->
+
   <!--head is the sauce-->
   <head>
     <meta charset="UTF-8" />
@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <style>
     * {
       box-sizing: border-box;
@@ -26,44 +27,46 @@
       clear: both;
       display: table;
     }
+
+    .menu {
+      background: #dedee9;
+    }
   </style>
 
   <body>
-    <!--nav bar-->
-    <nav class="navbar">
-      <div class="wrapper">
-        <div class="main-menu">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="functions.html">Camera Functions</a>
-            </li>
-            <li>
-              <a href="light.html">Light & Exposure</a>
-            </li>
-            <li>
-              <a href="darkroom.html">Developing</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!--content-->
     <div class="animated animatedFadeInUp fadeInUp">
+      <nav class="navbar">
+        <div class="wrapper">
+          <div class="main-menu">
+            <ul class="nav-left">
+              <li><a href="index.html">Home</a></li>
+            </ul>
+            <ul class="nav-right">
+              <li><a href="functions.html">Camera Functions</a></li>
+              <li><a href="light.html">Light & Exposure</a></li>
+              <li><a href="darkroom.html">Developing</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <hr />
+
       <h1>Developing & Darkroom</h1>
 
       <div class="container">
+        <!--Section 1: Intro-->
         <div class="content">
-          <img src="images/hangingfilm 1.png" />
+          <img
+            src="images/hangingfilm 1.png"
+            alt="Film negatives hanging to dry"
+          />
           <p>
             This page covers how to make unique prints of your negatives using
             color and B&W darkrooms, along with tips on developing and color
             management.
           </p>
-
           <p>
             A darkroom is a space used to develop and print photographs from
             film. In black and white (B&W) darkrooms, the film is developed
@@ -82,37 +85,31 @@
         <div class="menu">
           <h2>Topics on this page:</h2>
           <p>Select an option to jump ahead.</p>
-
           <br />
-
-          <div style="margin-left: 8.5%">
-            <nav>
-              <a href="#chapter1">Black & White Darkroom</a>
-              <br />
-              <br />
-              <a href="#chapter2">Color Darkroom</a>
-              <br />
-              <br />
-              <a href="#chapter3">Gallery of Uncommon Approaches </a>
-              <br />
-            </nav>
-          </div>
+          <nav class="link-section">
+            <a href="#chapter1">Black & White Darkroom</a>
+            <br /><br />
+            <a href="#chapter2">Color Darkroom</a>
+            <br />
+          </nav>
         </div>
       </div>
 
-      <br />
-      <br />
-      <br />
+      <hr />
       <br />
 
-      <!--new page section-->
+      <!--Chapter 1: Black & White Darkroom-->
       <h1 id="chapter1">Black & White Darkroom</h1>
 
       <div class="container">
+        <!--Section 2: enlarger-->
         <div class="content">
           <h2>Enlarger</h2>
-
-          <img src="images/bwenlargernum.png" style="width: 60%" />
+          <img
+            src="images/bwenlargernum.png"
+            alt="Diagram of black and white enlarger"
+            style="width: 60%"
+          />
           <p>
             A black and white darkroom enlarger is what you will use to get your
             image from a negative to a full sized positive print. The enlarger
@@ -126,16 +123,6 @@
         </div>
 
         <div class="menu">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-
           <h3>Parts of the Enlarger</h3>
           <br />
           <p>
@@ -164,10 +151,13 @@
           </p>
         </div>
 
+        <!--Section 3: chemicals-->
         <div class="content">
           <h2>Chemicals</h2>
-
-          <img src="images/chemicals.png" />
+          <img
+            src="images/chemicals.png"
+            alt="Black and white darkroom chemicals"
+          />
           <p>
             The ammount of time your print spends in each chemical can change
             the outcome of the image. For example, longer developing times will
@@ -176,11 +166,13 @@
             examples of the same image developed at three different ammounts of
             time, can you notice the difference?
           </p>
-          <br />
-          <br />
-          <img src="images/chemicalexampleplaceholder.png" style="width: 90%" />
-          <br />
-          <br />
+          <br /><br />
+          <img
+            src="images/chemicalexampleplaceholder.png"
+            alt="Image comparison showing different development times"
+            style="width: 90%"
+          />
+          <br /><br />
           <p>
             Another way to adjust the tonal outcome of your images is to use
             Contrast Filters. Contrast filters in film darkrooms are used during
@@ -198,53 +190,42 @@
           </p>
         </div>
 
-        <!--content end div-->
         <div class="menu">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-
           <p>
             In black and white darkroom printing, the chemicals are used in a
             specific order:
-            <br />
-            <br />
+            <br /><br /><br /><br /><br />
             Developer: This brings out the image on the exposed photo paper by
             reacting with the areas hit by light.
-            <br />
-            <br />
+            <br /><br /><br /><br />
             Stop Bath: This stops the development process immediately to prevent
             overdevelopment.
-            <br />
-            <br />
+            <br /><br /><br /><br />
             Fixer: This makes the image permanent by removing any unexposed
             silver halide, so the paper can be exposed to light without
             changing.
-            <br />
-            <br />
+            <br /><br /><br /><br />
             Water Wash: This rinses off all remaining chemicals to preserve the
             print and prevent damage or fading over time.
           </p>
         </div>
       </div>
-      <!-- .container end div-->
 
-      <br />
-      <br />
-      <br />
+      <hr />
       <br />
 
+      <!--Chapter 2: Color Darkroom-->
       <h1 id="chapter2">Color Darkroom</h1>
 
       <div class="container">
+        <!--Section 4:color enlarger-->
         <div class="content">
           <h2>Enlarger</h2>
-          <img src="images/colorenlarger.png" style="width: 60%" />
+          <img
+            src="images/colorenlarger.png"
+            alt="Diagram of color darkroom enlarger"
+            style="width: 60%"
+          />
           <p>
             A color enlarger is different than a Black & White enlarger because
             it uses CMYK values to control the color. It also makes prints from
@@ -278,11 +259,6 @@
         </div>
 
         <div class="menu">
-          <br />
-          <br />
-          <br />
-          <br />
-
           <h3>Parts of the Color Enlarger</h3>
           <p>
             1. Color Dials: These dials control the amount of cyan, magenta, and
@@ -312,9 +288,14 @@
           </p>
         </div>
 
+        <!--Section 5: color values-->
         <div class="content">
           <h2>Color Values & Fine-tuning your Print</h2>
-          <img src="images/colorwheel.png" style="width: 60%" />
+          <img
+            src="images/colorwheel.png"
+            alt="Color wheel"
+            style="width: 60%"
+          />
           <p>
             There are three primary colors in negative colour photography: red,
             green and blue. Inbetween that, there is cyan, magenta, and yellow.
@@ -339,22 +320,44 @@
         </div>
 
         <div class="menu">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <h3>What different color levels look like</h3>
-          <img src="images/placeholdersmall.png" />
-          <img src="images/placeholdersmall.png" />
-          <img src="images/placeholdersmall.png" />
+          <img
+            src="images/placeholdersmall.png"
+            alt="color print adjustment 1"
+          />
+          <img
+            src="images/placeholdersmall.png"
+            alt="color print adjustment 2"
+          />
+          <img
+            src="images/placeholdersmall.png"
+            alt="color print adjustment 3"
+          />
+        </div>
+
+        <div class="footer">
+          <hr />
+          <div style="margin-left: 20%">
+            <div class="button-grp">
+              <div class="row">
+                <div class="column">
+                  <a href="light.html">
+                    <button>Previous Step: <br />Light & <br />Exposure</button>
+                  </a>
+                </div>
+                <div class="column">
+                  <a href="gallery.html">
+                    <button>
+                      Next Step: <br />Gallery of Uncommon Approaches
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- .container end-->
     </div>
     <!--fadeinup animation end div-->
   </body>

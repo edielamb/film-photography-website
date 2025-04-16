@@ -2,108 +2,104 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <!--head is the sauce-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Photography: Uncommon Approaches</title>
 
-<!--head is the sauce-->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Film Photography: Uncommon Approaches</title>
-        
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-
-<style>
-
+  <style>
+    /*only one image on this page, so it gets different values*/
+    /*this gif is also one of the first ever film reel "movies" by Eadweard Muybridge in 1878
+         which i thought was fitting for a project on film photography. */
     img {
-        margin-left: 8.5%;
-        margin-right: 0%;
-       width: 80%;
-       height: 80%;
-
+      margin-left: 8.5%;
+      margin-right: 0%;
+      width: 80%;
+      height: 80%;
     }
 
+    /* internal css for side-by-side item layouts*/
     * {
-          box-sizing: border-box;
-        }
-        
-        .column {
-          float: left;
-          width: 33.33%;
-          padding: 5px;
-        }
-        
-      
-        .row::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
+      box-sizing: border-box;
+    }
 
-    </style>
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
 
-<!--body is the protein, all content that is visible on the website-->
-<body>
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
 
-<!--content-->
+  <!--body is the protein, all content that is visible on the website-->
+  <body>
+    <div class="animated animatedFadeInUp fadeInUp">
+      <!--main title-->
+      <h1 style="margin-left: 8.5%">
+        Film Photography: <br />
+        Uncommon Approaches
+      </h1>
+      <hr />
 
-<div class="animated animatedFadeInUp fadeInUp">
+      <!--divider gif-->
 
-    <h1>Film Photography: Uncommon Approaches</h1>  
-    <hr>
-    <img src="images/horsereel.gif"/>    
-    <hr>
-    
-        <div class="text-center">
-        <h2 style="text-align: center;"> An informational hub for those who want to
-            discover new methods of film photo production. To get started, select one of the options below to
-            learn new and different methods for film photography. 
-            I recommend going in order left to right.       
-        </h2> 
-     </div>
-        <br>
-        <br>
-        <br>
+      <img src="images/horsereel.gif" />
+      <hr />
+      <!--this gif is of one of the first film reel "movies" by Eadweard Muybridge in 1878. I thought it 
+    was fitting to include in a website about film photography-->
 
-    <div class="container">
+      <div class="text-center">
+        <h2 style="text-align: center">
+          An informational hub for those who want to discover new methods of
+          film photo production. To get started, select one of the options below
+          to learn about film photography. I recommend going in order left to
+          right.
+        </h2>
+      </div>
+
+      <br /><br /><br />
+
+      <!--footer-->
+      <div class="container">
         <div class="footer">
-
-                <div class="button-grp">
-            
-                <div class="row">
-                <div class="column">
-
+          <!--main navigation buttons-->
+          <div class="button-grp">
+            <div class="row">
+              <div class="column">
                 <a href="functions.html">
-                <button>Camera Functions</button>
+                  <button>Camera Functions</button>
                 </a>
-                </div> 
+              </div>
 
-                <div class="column">
+              <div class="column">
                 <a href="light.html">
-                    <button>Light & Exposure</button>
+                  <button>Light & Exposure</button>
                 </a>
-                </div>    
+              </div>
 
-                <div class="column">
+              <div class="column">
                 <a href="darkroom.html">
-                    <button>Darkroom & Print</button>
+                  <button>Darkroom & Print</button>
                 </a>
-                
-                </div>
-                </div>
-            
-                <br>
-                <br>
-                <br>
-            
+              </div>
+            </div>
+
+            <br /><br /><br />
+          </div>
         </div>
+      </div>
+      <!--.container end-->
+      <hr />
     </div>
-</div>
-<hr>
-       
-
+    <!--fadeinup end-->
   </body>
-
 </html>
-
-
-        

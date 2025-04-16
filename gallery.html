@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--html is the bread of the sandwich-->
+
+  <!--head is the sauce-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developing & Darkroom</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .menu {
+      background: #dedee9;
+    }
+  </style>
+
+  <body>
+    <div class="animated animatedFadeInUp fadeInUp">
+      <!--nav bar-->
+      <nav class="navbar">
+        <div class="wrapper">
+          <div class="main-menu">
+            <ul class="nav-left">
+              <li><a href="index.html">Home</a></li>
+            </ul>
+            <ul class="nav-right">
+              <li><a href="functions.html">Camera Functions</a></li>
+              <li><a href="light.html">Light & Exposure</a></li>
+              <li><a href="darkroom.html">Developing</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <hr />
+
+      <h1>Gallery of Uncommon Approaches</h1>
+      <h2>What are Uncommon Approaches?</h2>
+      <p>
+        This website's purpose is to provide simple information to those looking
+        to learn film photography. Since you've now learned all the basic
+        functions, materials, and processes, now it's time to impliment them and
+        start taking your own photos!
+      </p>
+      <p>
+        The Gallery of Uncommon Approaches serves as a source of insapiritation
+        and information on different techniques to take your photos beyond the
+        basics.
+      </p>
+    </div>
+  </body>
+</html>

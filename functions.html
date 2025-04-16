@@ -1,126 +1,156 @@
-<!--html is the bread of the sandwich-->
 
 <!DOCTYPE html>
 <html lang="en">
-  <!--head is the sauce-->
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Camera Functions</title>
-
     <link rel="stylesheet" href="css/style.css" />
-  
+    <style>
+      * {
+      box-sizing: border-box;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 2%;
+      background: transparent;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      background: transparent;
+    }
+      .menu {
+        background: #f1dbdb;
+      }
+    </style>
   </head>
 
-  <!--body is the protein, all content that is visible on the website-->
   <body>
-  
-
     <div class="animated animatedFadeInUp fadeInUp">
       <nav class="navbar">
         <div class="wrapper">
           <div class="main-menu">
-            <ul>
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="functions.html">Camera Functions</a>
-              </li>
-              <li>
-                <a href="light.html">Light & Exposure</a>
-              </li>
-              <li>
-                <a href="darkroom.html">Developing</a>
-              </li>
+            <ul class="nav-left">
+              <li><a href="index.html">Home</a></li>
+            </ul>
+            <ul class="nav-right">
+              <li><a href="functions.html">Camera Functions</a></li>
+              <li><a href="light.html">Light & Exposure</a></li>
+              <li><a href="darkroom.html">Developing</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
             </ul>
           </div>
         </div>
       </nav>
 
-<h1>Camera Functions</h1>
+      <hr>
 
-<div class="container">
-      
+      <h1>Camera Functions</h1>
+
+      <div class="container">
+        <!--Section 1: Camera Lens-->
         <div class="content">
           <h2>Camera Lens</h2>
-          <img src="images/placeholder.png" />
+          <img src="images/placeholder.png" alt="Camera Lens" />
           <p>
-            A film camera lens focuses light onto the film strip to create a clear image. It controls the amount of light entering the camera through the aperture. The lens also affects depth of field and how much of the scene is captured, depending on its focal length. In film photography, the quality and type of lens greatly influence the final look of the photo.
-          </p>
-        </div>
-
-       <div class="menu">
-        <br>
-        <br>
-        <br>
-        <br>
-          <h3>Lens Filters</h3>
-          <img src="images/placeholdersmall.png" />
-          <img src="images/placeholdersmall.png" />
-        </div>
-
-
-        <div class="content">
-          <h2>F-Stop & ISO</h2>
-          <img src="images/placeholder.png" />
-          <p>
-            F-stop refers to the aperture setting on a film camera lens, which controls how much light enters the camera. A lower f-stop (like f/2.8) means a wider aperture, letting in more light and creating a shallow depth of field. A higher f-stop (like f/16) lets in less light and brings more of the scene into focus. F-stop settings help photographers balance exposure and control the artistic look of their photos.
-            <br /><br />
-            ISO in film photography refers to the film's sensitivity to light. A lower ISO number (like 100) means the film is less sensitive and best for bright conditions, producing finer grain. A higher ISO (like 800 or 1600) is more sensitive and useful in low light, but results in more visible grain. Choosing the right ISO is key to getting the right exposure and mood for a photo.
-          </p>
-        </div>
-
-       <div class="menu">
-        <br>
-        <br>
-        <br>
-        <br>
-          <h3>F-Stop</h3>
-          <img src="images/placeholdersmall.png" />
-          <br /><br /><br /><br />
-          <h3>ISO</h3>
-          <img src="images/placeholdersmall.png" />
-        </div>
-
-
-  <div class="content">
-          <h2>Depth of Field</h2>
-          <img src="images/placeholder.png" />
-          <p>
-            Depth of field is the range of distance in a photo that appears sharp and in focus. A low depth of field means only a small part of the image is sharp, with the background and foreground blurred. A high depth of field means most or all of the image is in focus—ideal for landscapes. Depth of field is affected by the f-stop, the distance to the subject, and the lens focal length.
+            A film camera lens focuses light onto the film strip to create a
+            clear image. It controls the amount of light entering the camera
+            through the aperture. The lens also affects depth of field and how
+            much of the scene is captured, depending on its focal length. In
+            film photography, the quality and type of lens greatly influence the
+            final look of the photo.
           </p>
         </div>
 
         <div class="menu">
-          <br>
-          <br>
-          <br>
-          <br>
-          <h3>High Depth of Field</h3>
-          <img src="images/placeholdersmall.png" />
-          <h3>Low Depth of Field</h3>
-          <img src="images/placeholdersmall.png" />
-          <br /><br /><br /><br />
+          <h3>Lens Filters</h3>
+          <img src="images/placeholdersmall.png" alt="Lens Filter 1" />
+          <img src="images/placeholdersmall.png" alt="Lens Filter 2" />
         </div>
-    
-      
+
+
+        <!--Section 2: Fstop & iso-->
+        <div class="content">
+          <h2>F-Stop & ISO</h2>
+          <img src="images/placeholder.png" alt="F-Stop and ISO" />
+          <p>
+            F-stop refers to the aperture setting on a film camera lens, which
+            controls how much light enters the camera. A lower f-stop (like
+            f/2.8) means a wider aperture, letting in more light and creating a
+            shallow depth of field. A higher f-stop (like f/16) lets in less
+            light and brings more of the scene into focus. F-stop settings help
+            photographers balance exposure and control the artistic look of
+            their photos.
+            <br /><br />
+            ISO in film photography refers to the film's sensitivity to light. A
+            lower ISO number (like 100) means the film is less sensitive and
+            best for bright conditions, producing finer grain. A higher ISO
+            (like 800 or 1600) is more sensitive and useful in low light, but
+            results in more visible grain. Choosing the right ISO is key to
+            getting the right exposure and mood for a photo.
+          </p>
+        </div>
+
+        <div class="menu">
+          <h3>F-Stop</h3>
+          <img src="images/placeholdersmall.png" alt="F-Stop" />
+          <br /><br /><br /><br />
+          <h3>ISO</h3>
+          <img src="images/placeholdersmall.png" alt="ISO" />
+        </div>
+
+        <!--Section 3: Depth of Feild-->
+        <div class="content">
+          <h2>Depth of Field</h2>
+          <img src="images/placeholder.png" alt="Depth of Field" />
+          <p>
+            Depth of field is the range of distance in a photo that appears
+            sharp and in focus. A low depth of field means only a small part of
+            the image is sharp, with the background and foreground blurred. A
+            high depth of field means most or all of the image is in focus—ideal
+            for landscapes. Depth of field is affected by the f-stop, the
+            distance to the subject, and the lens focal length.
+          </p>
+        </div>
+
+        <div class="menu">
+          <h3>High Depth of Field</h3>
+          <img src="images/placeholdersmall.png" alt="High DOF" />
+          <h3>Low Depth of Field</h3>
+          <img src="images/placeholdersmall.png" alt="Low DOF" />
+        </div>
+
+        
+        <!-- Footer -->
         <div class="footer">
-          <div class="navbar">
-            <div class="wrapper">
-              <div class="main-menu">
-                <div class="section-center">
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="light.html">Next Step</a></li>
-                  </ul>
+          <hr>
+          <div style="margin-left: 25%">
+            <div class="button-grp">
+              <div class="row">
+                <div class="column">
+                  <a href="index.html">
+                    <button>Previous Step: <br>Homepage</button>
+                  </a>
+                </div>
+
+                <div class="column">
+                  <a href="light.html">
+                    <button>Next Step: <br>Light & Exposure</button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      
+      <!--.container end-->
+    </div>
+    <!--fadeinup end-->
   </body>
 </html>
 <!--the end-->
