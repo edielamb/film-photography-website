@@ -1,6 +1,6 @@
 * {
   scroll-behavior: smooth;
-
+  box-sizing: border-box;
   background-color: #fbf4eb;
 }
 
@@ -113,7 +113,6 @@ https://codepen.io/whoran/pen/WNbxpML */
 }
 
 /* horizontal and vertical rules */
-
 hr {
   border: 0;
   height: 1.5px;
@@ -132,7 +131,6 @@ https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
   align-items: center;
 }
 
-/* Optional: Keep existing styles */
 .navbar .nav-left,
 .navbar .nav-right {
   display: flex;
@@ -151,6 +149,71 @@ https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
   margin-bottom: 0%;
   padding: 0;
   list-style: none;
+}
+/* my navbar is not sticky, because i thought it interfered with the 
+content while scrolling. Since i have a lot of large images, having the 
+navbar be sticky was making it so the images couldn't be seen fully. 
+I think the website is still accessable because i have alternate navigation
+ buttons at the bottom of each page.*/
+
+/* Breakpoint - Desktop */
+
+@media (min-width: 601px) {
+  h1 {
+    color: #254b4b;
+    font-family: "PlayfairDisplay-BoldItalic";
+    font-size: 65pt;
+    background: transparent;
+  }
+
+  h2 {
+    font-family: "PlayfairDisplay-Regular";
+    color: #254b4b;
+    font-size: 28pt;
+    line-height: 1.5;
+    background: transparent;
+  }
+
+  h3 {
+    color: black;
+    font-family: "Poppins-SemiBold";
+    font-size: 12pt;
+    font-weight: 500;
+    line-height: 1.5;
+    background: transparent;
+  }
+
+  p {
+    font-family: "Poppins-Light";
+    font-size: 11pt;
+    font-weight: 300;
+    color: black;
+    line-height: 1.5;
+    margin-right: 10%;
+    margin-top: 5%;
+    background: transparent;
+  }
+
+  img {
+    height: auto;
+    width: auto;
+    margin-top: 2%;
+    background: transparent;
+    background: transparent;
+  }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2.5px;
+    font-family: "Poppins-Regular";
+    font-size: 9pt;
+    color: #254b4b;
+    background: transparent;
+  }
+
+  body {
+    padding: 5%;
+  }
 }
 
 /* Breakpoint - mobile */
@@ -213,70 +276,67 @@ https://youtu.be/HXYZxVbWkjc?si=rUZlTDI-1QRHcXKV */
   body {
     padding: 1%;
   }
-}
 
-/* Breakpoint - Desktop */
-
-@media (min-width: 601px) {
-  h1 {
-    color: #254b4b;
-    font-family: "PlayfairDisplay-BoldItalic";
-    font-size: 65pt;
-    background: transparent;
+  /* Navbar - keep horizontal, reduce spacing */
+  .navbar .main-menu {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2%;
   }
 
-  h2 {
-    font-family: "PlayfairDisplay-Regular";
-    color: #254b4b;
-    font-size: 28pt;
-    line-height: 1.5;
-    background: transparent;
+  .navbar ul li a {
+    padding: 0px 15px;
+    font-size: 7.5pt;
   }
 
-  h3 {
-    color: black;
-    font-family: "Poppins-SemiBold";
-    font-size: 12pt;
-    font-weight: 500;
-    line-height: 1.5;
-    background: transparent;
+  /* Buttons - scale padding, font */
+  .button-grp {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 0;
   }
 
-  p {
-    font-family: "Poppins-Light";
-    font-size: 11pt;
-    font-weight: 300;
-    color: black;
-    line-height: 1.5;
-    margin-right: 10%;
-    margin-top: 5%;
-    background: transparent;
-  }
-
-  img {
-    height: auto;
-    width: auto;
-    margin-top: 2%;
-    background: transparent;
-    background: transparent;
-  }
-
-  a {
-    text-decoration: underline;
-    text-underline-offset: 2.5px;
-    font-family: "Poppins-Regular";
+  .button-grp button {
+    padding: 8px 12px;
     font-size: 9pt;
-    color: #254b4b;
-    background: transparent;
   }
 
-  body {
-    padding: 5%;
+  /* Carousel - keep layout, fit smaller screen */
+  .carousel-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .carousel-img {
+    max-width: 100%;
+    max-height: 60vh;
+  }
+
+  .carousel-buttons {
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .carousel-btn {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+
+  .preview-header {
+    padding: 8px 10px;
+  }
+
+  .new-window-btn {
+    font-size: 9pt;
+    padding: 6px 10px;
+    gap: 4px;
   }
 }
 
-/* button group tutorial by 
-Tech Talk Tutorials on YouTube. */
+/* Main navigation buttons.
+button group tutorial by Tech Talk Tutorials on YouTube. */
 
 button {
   height: auto;
@@ -310,14 +370,14 @@ button {
   transition: 0.3s;
 }
 
-/*image carousel*/
+/*Image Carousel (gallery page)*/
 .carousel-wrapper {
   width: 120%;
   max-width: 200%;
   text-align: left;
 }
 
-/* Image styling to fit both portrait & landscape */
+/* styling to fit both portrait & landscape images */
 .carousel-img {
   display: none;
   max-width: 100%;
@@ -333,7 +393,7 @@ button {
   display: block;
 }
 
-/* Buttons centered below image */
+/* buttons centered below image */
 .carousel-buttons {
   display: flex;
   justify-content: center;
@@ -366,7 +426,8 @@ button {
   margin-left: 40px;
 }
 
-/*iframe embedded webpage thing*/
+/* iframe embedded webpage thing. 
+Ron Wood's student gallery */
 
 .preview-container {
   border: 2px solid #2b5858;
@@ -408,8 +469,7 @@ button {
 
 .new-window-btn::before {
   content: "";
-  font-family: "Poppins-Light";
-  font-size: 13pt;
+  display: none;
 }
 
 .new-window-btn:hover {
@@ -417,7 +477,7 @@ button {
   transition: 0.3s;
 }
 
-/* div class for anything that needs to be centered */
+/* div classes for anything that needs to be centered */
 .section-center {
   margin-right: 30%;
   margin-left: 10%;
