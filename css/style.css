@@ -291,7 +291,7 @@ button {
 .button-grp button {
   position: center;
   align-items: center;
-  margin-left: 30%;
+  margin-left: 25%;
   background-color: #fbf4eb;
   border: 2px solid #254b4b;
   padding: 10px 15px;
@@ -310,12 +310,118 @@ button {
   transition: 0.3s;
 }
 
+/*image carousel*/
+.carousel-wrapper {
+  width: 120%;
+  max-width: 200%;
+  text-align: left;
+}
+
+/* Image styling to fit both portrait & landscape */
+.carousel-img {
+  display: none;
+  max-width: 100%;
+  max-height: 80vh;
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  background: transparent;
+}
+
+.carousel-img.active {
+  display: block;
+}
+
+/* Buttons centered below image */
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.carousel-btn {
+  background-color: rgba(43, 88, 88, 0.8);
+  color: #fbf4eb;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins-Regular";
+}
+
+.carousel-btn:hover {
+  background-color: #d5e4e1;
+}
+
+.prev-btn {
+  margin-right: 40px;
+}
+
+.next-btn {
+  margin-left: 40px;
+}
+
+/*iframe embedded webpage thing*/
+
+.preview-container {
+  border: 2px solid #2b5858;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fbf4eb;
+  margin-top: 3%;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fbf4eb;
+  padding: 10px 15px;
+  border-bottom: 1.5px solid #2b5858;
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 11pt;
+  color: #254b4b;
+}
+
+.preview-title {
+  background: transparent;
+}
+
+.new-window-btn {
+  background-color: white;
+  border: 1.5px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 10pt;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.new-window-btn::before {
+  content: "";
+  font-family: "Poppins-Light";
+  font-size: 13pt;
+}
+
+.new-window-btn:hover {
+  background-color: #d8e1e0;
+  transition: 0.3s;
+}
+
 /* div class for anything that needs to be centered */
 .section-center {
-  margin-right: 25%;
-  margin-left: 0%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-right: 30%;
+  margin-left: 10%;
+  margin-top: 2%;
 }
 
 .text-center {
