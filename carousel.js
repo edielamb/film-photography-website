@@ -1,3 +1,5 @@
+//javascript for image carousel tutorial by Web Dev Simplified on youtube
+//https://www.youtube.com/watch?v=9HcxHDS2w1s
 document.addEventListener("DOMContentLoaded", () => {
   const carousels = document.querySelectorAll(".carousel-wrapper");
 
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       showImage(currentIndex);
     });
 
-    // Initialize first image
+    // initialize first image
     showImage(currentIndex);
   });
 });

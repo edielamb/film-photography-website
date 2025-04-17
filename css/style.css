@@ -19,6 +19,9 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Playfair Display typeface was designed by Claus Eggers Sørensen. 
+   It was published under the Open Font Licence 1.1. 
+   Availible on Google Fonts, Adobe fonts, and others */
 
 @font-face {
   font-family: "Poppins-Regular";
@@ -40,6 +43,10 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Poppins font was designed by Jonny Pinhorn and Ninad Kale, 
+   further developed and expanded by the Indian Type Foundry team. 
+   Available for free under the Open Font Licence 1.1. 
+   on Google Fonts, Adobe Fonts, and others */
 
 /* GRIDSSS*/
 /* grid positioning and template area turorial by Scrimba on youtube.
@@ -336,7 +343,8 @@ I think the website is still accessable because i have alternate navigation
 }
 
 /* Main navigation buttons.
-button group tutorial by Tech Talk Tutorials on YouTube. */
+button group tutorial by Tech Talk Tutorials on YouTube.
+https://youtu.be/iUC9Em3Sylw?si=rz-P_5vp6M71zlVy */
 
 button {
   height: auto;
@@ -370,7 +378,9 @@ button {
   transition: 0.3s;
 }
 
-/*Image Carousel (gallery page)*/
+/*Image Carousel (gallery page)
+image carousel / slideshow tutorial by Web Dev Simplified on youtube
+https://www.youtube.com/watch?v=9HcxHDS2w1s*/
 .carousel-wrapper {
   width: 120%;
   max-width: 200%;
